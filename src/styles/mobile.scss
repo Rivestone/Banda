@@ -1,0 +1,117 @@
+.special-offer-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  &__wrapper{
+    min-width: 320px;
+  }
+  &__title{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 0 15px;
+    font-family: 'Proximanova-regular';
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .special-offer{
+    width: 100%;
+    box-sizing: border-box;
+    &--yellow{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 13px 30px 8px 15px;
+      background-color: $first-banner-bg;
+      background: url(../img/banner1-bg.png)
+    }
+    &--purple{
+      position: relative;
+      height: 293px;
+      margin-top: 20px;
+      background: url(../img/banner2.png);
+      background-repeat: no-repeat;
+      .button{
+        position: absolute;
+        bottom: 20px;
+        right: 26px;
+      }
+    }
+    &__img-box{
+      position: relative;
+      &:after{
+        content: "";
+        position: absolute;
+        top: -9px;
+        right: -43px;
+        height: 119px;
+        width: 106px;
+        background: url('../img/banner1-label.png')
+      }
+    }
+    &__title{
+      font-family: 'Proximanova-bold';
+      font-size: 30px;
+      line-height: 38px;
+    }
+    &__description{
+      margin: 5px -7px 11px 0;
+      font-family: 'Proximanova-regular';
+      font-size: 16px;
+    }
+    &__bottom{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+    }
+    &__new-price{
+      font-family: 'Proximanova-bold';
+      font-size: 36px;
+      letter-spacing: -1px;
+      line-height: 26px;
+      color: $pink;
+    }
+    &__old-price{
+      position: relative;
+      display: inline-block;
+      margin-top: 10px;
+      font-family: 'Proximanova-regular';
+      font-size: 16px;
+      letter-spacing: 0.02em;
+      line-height: 16px;
+      &:before{
+        content: "";
+        position: absolute;
+        display: block;
+        height: 2px;
+        width: 115%;
+        background-color: $pink;
+        transform: rotate(8deg);
+        left: -10%;
+        top: 7px;
+      }
+    }
+    &__btn{
+      display: inline-block;
+      a{
+        display: inline-block;
+        margin-right: -5px;
+        padding: 8px 14px 10px 20px;
+        font-family: 'Proximanova-bold';
+        font-size: 18px;
+        background-color: $pink;
+        color: $white;
+        text-transform: uppercase;
+        transition: .3s ease;
+        &:hover{
+          background-color: lighten($pink, 10%);
+        }
+      }
+    }
+    &__link{
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

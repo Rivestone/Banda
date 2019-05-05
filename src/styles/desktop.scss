@@ -1,0 +1,41 @@
+@media (min-width: 600px) {
+  .special-offer-list{
+    .special-offer{
+      width: 566px;
+      &--yellow{
+        flex-wrap: nowrap;
+        margin: 0 auto;
+      }
+      &--purple{
+        margin: 20px auto 0;
+      }
+      &__img-box{
+        flex: 194px 0;
+      }
+      &__content-box{
+        margin-left: 44px;
+      }
+      &__title{
+        letter-spacing: -0.9px;
+      }
+    }
+  }
+}
+@media (min-width: 1149px) {
+  .special-offer-list{
+    flex-wrap: nowrap;
+    &__title{
+      padding: 0;
+    }
+    &__wrapper{
+      width: 1169px;
+      margin: auto;
+    }
+    .special-offer{
+      width: 566px;
+      &--purple{
+        margin: 0 0 0 42px;
+      }
+    }
+  }
+}

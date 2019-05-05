@@ -1,0 +1,34 @@
+.promo-timer{
+  display: flex;
+  align-items: flex-end;
+  margin: 0 -10.5px;
+  &__field{
+    text-align: center;
+    margin: 0 10.5px;
+  }
+  &__value{
+    position: relative;
+    padding: 0 7px;
+    box-sizing: border-box;
+    width: 80px;
+    height: 55px;
+    border-radius: 3px;
+    background-color: $white;
+    font-family: 'Umnik';
+    font-size: 55px;
+    letter-spacing: 11px;
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background: url('../img/dashed-line.png')
+    }
+  }
+  &__caption{
+    font-family: 'Proximanova-regular';
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
